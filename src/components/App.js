@@ -4,13 +4,16 @@ import '../assets/App.css';
 
 import { Route, NavLink, Switch } from 'react-router-dom';
 
-import Resume from './Resume'
+import Home from './Home'
+import Experience from './Experience'
+import Portfolio from './Portfolio'
+import Contact from './Contact'
 
 class App extends Component {
 
   renderNavBar() {
     return (
-      <div>
+      <div className="navbar">
         <NavLink className="navlink" to="/">HOME</NavLink>
         <NavLink className="navlink" to="/experience">EXPERIENCE</NavLink>
         <NavLink className="navlink" to="/portfolio">PORTFOLIO</NavLink>
@@ -23,7 +26,12 @@ class App extends Component {
     return (
       <div className="App">
         { this.renderNavBar() }
-        <Resume />
+        <Switch>
+          <Route exact path="/" component={props => <Home {...props} />} />
+          <Route exact path="/experience" component={props => <Experience {...props} />} />
+          <Route exact path="/portfolio" component={props => <Portfolio {...props} />} />
+          <Route exact path="/contact" component={props => <Contact {...props} />} />
+        </Switch>
 
       </div>
     );
