@@ -26,11 +26,15 @@ class App extends Component {
     return (
       <div className="App">
         { this.renderNavBar() }
+
         <Switch>
           <Route exact path="/" component={props => <Home {...props} />} />
           <Route exact path="/experience" component={props => <Experience {...props} />} />
-          <Route exact path="/portfolio" component={props => <Portfolio {...props} />} />
+          <Route exact path="/portfolio" component={props => <Portfolio {...props} page="main"/>} />
           <Route exact path="/contact" component={props => <Contact {...props} />} />
+
+          <Route exact path="/portfolio/art" component={props => <Portfolio {...props} page="art"/>} />
+          <Route exact path="/portfolio/code" component={props => <Portfolio {...props} page="code"/>} />
         </Switch>
 
       </div>

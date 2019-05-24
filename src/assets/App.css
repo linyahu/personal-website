@@ -29,12 +29,48 @@
 **************************************/
 .navbar {
   padding: 1%;
-  background-color: rgba(200,200,200,0.5);
+  /* background-color: rgba(200,200,200,0.5); */
+}
+
+.sub-navbar {
+  padding: 0.5%;
+  /* background-color: #C3E6E4; */
+  height: 100%;
+  width: 15%;
+  text-align: left;
 }
 
 .navlink {
   margin: 2%;
   padding: 2%;
   text-decoration: none;
-  color: rgba(100,100,100,0.8);
+  font-size: 14px;
+  color: #6B808C;
+}
+
+.navlink:hover {
+  color: #7AB6B3;
+}
+
+.navlink:focus {
+  outline-color: #7AB6B3;
+}
+
+.sub-navlink {
+  margin: 5%;
+  padding: 3%;
+  font-size: 12px;
+  text-decoration: none;
+  color: #2D363A;
+
+  /* width: 200px; */
+}
+
+/**************************************
+                BOX MODEL
+**************************************/
+
+
+.outer-container {
+  margin-top: 10%;
 }
