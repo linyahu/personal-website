@@ -18,7 +18,7 @@ class Portfolio extends Component {
     return (
       <div>
         {
-          this.renderNavBar()
+          // this.renderNavBar()
         }
         <h1>this is the portfolio page</h1>
       </div>
