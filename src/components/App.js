@@ -11,16 +11,6 @@ import Portfolio from './Portfolio'
 import Contact from './Contact'
 
 class App extends Component {
-  state = {
-    dropdownOpen: false,
-  }
-
-  toggle = () => {
-      this.setState( prevState => {
-        return {dropdownOpen: !prevState.dropdownOpen}
-      })
-  }
-
   renderNavBar() {
     return (
       <div className="navbar">

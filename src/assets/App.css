@@ -76,3 +76,19 @@
 .outer-container {
   margin-top: 10%;
 }
+
+.resume {
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  margin: 2%;
+  padding: 1%;
+}
+
+.resume p {
+  text-align: left;
+}
+
+.resume ul {
+  text-align: left;
+}
