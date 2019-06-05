@@ -77,6 +77,18 @@
   margin-top: 10%;
 }
 
+
+.sm-card {
+  width: 25%;
+  height: 250px;
+  padding: 1.5%;
+  margin: 1%;
+  display: inline-block;
+  background-color: rgba(240,240,240,0.9);
+}
+
+
+
 .resume {
   border-color: black;
   border-style: solid;
@@ -91,4 +103,9 @@
 
 .resume ul {
   text-align: left;
+}
+
+.resume-block {
+  margin: 1%;
+  padding: 1%;
 }

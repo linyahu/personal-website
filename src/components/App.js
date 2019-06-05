@@ -9,6 +9,7 @@ import Home from './Home'
 import Experience from './Experience'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
+import Art from './Art'
 
 class App extends Component {
   renderNavBar() {
@@ -33,7 +34,7 @@ class App extends Component {
           <Route exact path="/experience" component={props => <Experience {...props} />} />
           <Route exact path="/portfolio" component={props => <Portfolio {...props} page="main"/>} />
           <Route exact path="/contact" component={props => <Contact {...props} />} />
-          <Route exact path="/portfolio/art" component={props => <Portfolio {...props} page="art"/>} />
+          <Route exact path="/portfolio/art" component={props => <Art {...props} page="art"/>} />
           <Route exact path="/portfolio/code" component={props => <Portfolio {...props} page="code"/>} />
         </Switch>
 
