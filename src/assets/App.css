@@ -30,6 +30,7 @@
 .navbar {
   padding: 1%;
   /* background-color: rgba(200,200,200,0.5); */
+  text-align: left;
 }
 
 .sub-navbar {
@@ -43,8 +44,8 @@
 }
 
 .navlink {
-  margin: 2%;
-  padding: 2%;
+  margin: 1%;
+  padding: 1%;
   text-decoration: none;
   font-size: 14px;
   color: #6B808C;
@@ -72,9 +73,9 @@
                 BOX MODEL
 **************************************/
 
-
 .outer-container {
-  margin-top: 10%;
+  margin-top: 5%;
+  padding: 2% 3% 5% 3%;
 }
 
 
@@ -108,4 +109,15 @@
 .resume-block {
   margin: 1%;
   padding: 1%;
+}
+
+
+/**************************************
+              Artwork
+**************************************/
+.thumbnail {
+  height: 300px;
+  margin: 1%;
+  padding: 1%;
+  background-color: rgba(240,240,240,0.9);
 }
