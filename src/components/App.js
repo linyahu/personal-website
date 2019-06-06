@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo4.png';
 import '../assets/App.css';
 
 import { Route, NavLink, Switch } from 'react-router-dom';
@@ -15,6 +15,7 @@ class App extends Component {
   renderNavBar() {
     return (
       <div className="navbar">
+        <img src={logo} width="50" height="50" />
         <NavLink className="navlink" to="/">HOME</NavLink>
         <NavLink className="navlink" to="/experience">EXPERIENCE</NavLink>
         <NavLink className="navlink" to="/portfolio">PORTFOLIO</NavLink>
