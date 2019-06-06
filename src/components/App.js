@@ -7,20 +7,26 @@ import { Route, NavLink, Switch } from 'react-router-dom';
 
 import Home from './Home'
 import Experience from './Experience'
-import Portfolio from './Portfolio'
 import Contact from './Contact'
 import Art from './Art'
+import Projects from './Projects'
 
 class App extends Component {
   renderNavBar() {
     return (
-      <div className="navbar">
-        <img src={logo} width="50" height="50" />
-        <NavLink className="navlink" to="/">HOME</NavLink>
-        <NavLink className="navlink" to="/experience">EXPERIENCE</NavLink>
-        <NavLink className="navlink" to="/portfolio">PORTFOLIO</NavLink>
+      <div>
 
-        <NavLink className="navlink" to="/contact">CONTACT</NavLink>
+        <img id="logo" src={logo} width="50" height="50" />
+
+
+        <div className="navbar">
+          <NavLink className="navlink" to="/">HOME</NavLink>
+          <NavLink className="navlink" to="/experience">EXPERIENCE</NavLink>
+          <NavLink className="navlink" to="/projects">TECHNICAL PROJECTS</NavLink>
+          <NavLink className="navlink" to="/art">ART GALLERY</NavLink>
+
+          <NavLink className="navlink" to="/contact">CONTACT</NavLink>
+        </div>
       </div>
     )
   }
@@ -33,10 +39,10 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={props => <Home {...props} />} />
           <Route exact path="/experience" component={props => <Experience {...props} />} />
-          <Route exact path="/portfolio" component={props => <Portfolio {...props} page="main"/>} />
+          <Route exact path="/projects" component={props => <Projects {...props} page="main"/>} />
+          <Route exact path="/art" component={props => <Art {...props} page="art"/>} />
           <Route exact path="/contact" component={props => <Contact {...props} />} />
-          <Route exact path="/portfolio/art" component={props => <Art {...props} page="art"/>} />
-          <Route exact path="/portfolio/code" component={props => <Portfolio {...props} page="code"/>} />
+
         </Switch>
 
       </div>

@@ -26,6 +26,7 @@ import pic14 from '../assets/art/IMG_7205.jpeg'
 class Art extends Component {
   state = {
     default: true,
+    art: [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13, pic14],
   }
 
   toggleView = (e) => {
@@ -38,23 +39,13 @@ class Art extends Component {
   renderDefault = () => {
     return(
       <div className="outer-container">
-        <img onClick={this.toggleView} className="thumbnail" src={pic1} alt="black and white still life"/>
-        <img onClick={this.toggleView} className="thumbnail" src={pic2} alt="black and white still life"/>
-        <img onClick={this.toggleView} className="thumbnail" src={pic3} alt="black and white still life"/>
-        <br />
-        <img onClick={this.toggleView} className="thumbnail" src={pic4} alt="mountain watercolor"/>
-        <img onClick={this.toggleView} className="thumbnail" src={pic5} alt="mountain watercolor"/>
-        <img onClick={this.toggleView} className="thumbnail" src={pic6} alt="watercolor"/>
-        <br />
-        <img onClick={this.toggleView} className="thumbnail" src={pic7} alt="watercolor"/>
-        <img onClick={this.toggleView} className="thumbnail" src={pic8} alt="watercolor"/>
-        <img onClick={this.toggleView} className="thumbnail" src={pic9} alt="watercolor"/>
-
-        <img onClick={this.toggleView} className="thumbnail" src={pic10} alt="plain near auvers acrylic"/>
-        <img onClick={this.toggleView} className="thumbnail" src={pic11} alt="plain near auvers acrylic"/>
-        <img onClick={this.toggleView} className="thumbnail" src={pic12} alt="plain near auvers acrylic"/>
-        <img onClick={this.toggleView} className="thumbnail" src={pic13} alt="plain near auvers acrylic"/>
-        <img onClick={this.toggleView} className="thumbnail" src={pic14} alt="plain near auvers acrylic"/>
+        {
+          this.state.art.map( source => {
+            return(
+              <img src={source} className="thumbnail"/>
+            )
+          })
+        }
       </div>
     )
   }
@@ -64,6 +55,7 @@ class Art extends Component {
   }
 
   render() {
+    console.log(this.state.art);
     return(
       <Fragment>
       {
@@ -79,3 +71,21 @@ class Art extends Component {
 }
 
 export default Art
+
+// <img onClick={this.toggleView} className="thumbnail" src={pic1} alt="black and white still life"/>
+// <img onClick={this.toggleView} className="thumbnail" src={pic2} alt="black and white still life"/>
+// <img onClick={this.toggleView} className="thumbnail" src={pic3} alt="black and white still life"/>
+// <br />
+// <img onClick={this.toggleView} className="thumbnail" src={pic4} alt="mountain watercolor"/>
+// <img onClick={this.toggleView} className="thumbnail" src={pic5} alt="mountain watercolor"/>
+// <img onClick={this.toggleView} className="thumbnail" src={pic6} alt="watercolor"/>
+// <br />
+// <img onClick={this.toggleView} className="thumbnail" src={pic7} alt="watercolor"/>
+// <img onClick={this.toggleView} className="thumbnail" src={pic8} alt="watercolor"/>
+// <img onClick={this.toggleView} className="thumbnail" src={pic9} alt="watercolor"/>
+//
+// <img onClick={this.toggleView} className="thumbnail" src={pic10} alt="plain near auvers acrylic"/>
+// <img onClick={this.toggleView} className="thumbnail" src={pic11} alt="plain near auvers acrylic"/>
+// <img onClick={this.toggleView} className="thumbnail" src={pic12} alt="plain near auvers acrylic"/>
+// <img onClick={this.toggleView} className="thumbnail" src={pic13} alt="plain near auvers acrylic"/>
+// <img onClick={this.toggleView} className="thumbnail" src={pic14} alt="plain near auvers acrylic"/>

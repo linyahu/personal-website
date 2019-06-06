@@ -27,10 +27,17 @@
 /**************************************
                 NAV BAR
 **************************************/
+#logo {
+  position: sticky;
+  /* left: 50%; */
+  /* padding: 1%; */
+  /* z-index: 3; */
+}
+
 .navbar {
   padding: 1%;
   /* background-color: rgba(200,200,200,0.5); */
-  text-align: left;
+  text-align: right;
 }
 
 .sub-navbar {
@@ -76,6 +83,7 @@
 .outer-container {
   margin-top: 5%;
   padding: 2% 3% 5% 3%;
+  background-color: rgba(240,240,240,0.9);
 }
 
 
