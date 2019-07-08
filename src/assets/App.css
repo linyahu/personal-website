@@ -9,6 +9,7 @@
 
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -111,6 +112,7 @@
   /* background-color: rgba(240,240,240,0.9); */
   height: 500px;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 .second-container {
@@ -162,4 +164,22 @@
   border-color: #FCCCC4;
   border-style: solid;
   border-width: medium;
+}
+
+.education-heading {
+  /* background-color: rgba(0,200,0,0.1); */
+  margin: 0.5% 1.5% 0.5% 0.5%;
+  padding-right: 2%;
+  width: 16%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+}
+
+.education-body {
+  /* background-color: rgba(0,200,0,0.1); */
+  margin: 0.5% 0.5% 0.5% 1%;
+  width: 77%;
+  display: inline-block;
+  vertical-align: top;
 }

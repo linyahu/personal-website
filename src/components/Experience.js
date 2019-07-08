@@ -91,20 +91,35 @@ class Experience extends Component {
           <div className="resume-block" id="education">
             <h4>EDUCATION</h4>
             <div className="experience-block">
-              <h5> Flatiron School | New York, NY | Spring 2019 </h5>
-              <p>Full-Stack Software Engineering Bootcamp </p>
-              <ul>
-                <li>Immersive software engineering program with focus on JavaScript and Ruby frameworks</li>
-                <li>Created 4 fully functioning applications using Ruby on Rails, vanilla JavaScript, React, and Redux</li>
-              </ul>
+              <div className="education-heading">
+                <h5> Flatiron School
+                <br /> New York, NY
+                <br /> Spring 2019 </h5>
+              </div>
+
+              <div className="education-body">
+                <ul>
+                  <li>Immersive full-stack software engineering program with technical focus on JavaScript and Ruby frameworks</li>
+                  <li>Created 4 fully functioning applications using Ruby on Rails, vanilla JavaScript, React, and Redux</li>
+                </ul>
+              </div>
             </div>
             <br />
 
             <div className="experience-block">
-              <h5> New York University | New York, NY | B.S. Winter 2016 </h5>
-              <p>Leonard N. Stern School of Business </p>
+
+              <div className="education-block">
+              <div className="education-heading">
+                <h5> New York University
+                <br />
+                New York, NY
+                <br />
+                B.S. Winter 2016 </h5>
+              </div>
+
+              <div className="education-body">
               <ul>
-                <li>B.S., Finance & Management, GPA: 3.7 | Awards: Irving H. Isaac Scholarship; Joan & Dan Holmes Scholarship; Suh Family Scholarship </li>
+                <li>Leonard N. Stern School of Business B.S., Finance & Management, GPA: 3.7 | Awards: Irving H. Isaac Scholarship; Joan & Dan Holmes Scholarship; Suh Family Scholarship </li>
                 <li>Teacher’s Assistant by invitation, International Financial Management, Fall 2015 </li>
                 <li>Activities: </li>
                   <ul>
@@ -112,6 +127,9 @@ class Experience extends Component {
                     <li>Director of Marketing, Luxury and Retail Association, Fall 2015</li>
                   </ul>
               </ul>
+              </div>
+              </div>
+
             </div>
           </div>
 
