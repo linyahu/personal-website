@@ -1,32 +1,32 @@
 import React, { Component, Fragment } from 'react'
 
 // black and white still life
-import pic1 from '../assets/art/bw1.jpeg'
-import pic2 from '../assets/art/IMG_6947.jpeg'
-import pic3 from '../assets/art/IMG_6950.jpeg'
-
-// vertical watercolor
-import pic4 from '../assets/art/IMG_7206.jpeg'
-import pic5 from '../assets/art/IMG_7207.jpeg'
-import pic6 from '../assets/art/IMG_6957.jpeg'
-
-// horizontal watercolor
-import pic7 from '../assets/art/IMG_6952.jpeg'
-import pic8 from '../assets/art/IMG_6954.jpeg'
-import pic9 from '../assets/art/IMG_6955.jpeg'
-
-// acrylic
-import pic10 from '../assets/art/IMG_6971.jpeg' // van gogh
-import pic11 from '../assets/art/IMG_7202.jpeg'
-import pic12 from '../assets/art/IMG_7203.jpeg'
-import pic13 from '../assets/art/IMG_7204.jpeg'
-import pic14 from '../assets/art/IMG_7205.jpeg'
+// import pic1 from '../assets/art/bw1.jpeg'
+// import pic2 from '../assets/art/IMG_6947.jpeg'
+// import pic3 from '../assets/art/IMG_6950.jpeg'
+//
+// // vertical watercolor
+// import pic4 from '../assets/art/IMG_7206.jpeg'
+// import pic5 from '../assets/art/IMG_7207.jpeg'
+// import pic6 from '../assets/art/IMG_6957.jpeg'
+//
+// // horizontal watercolor
+// import pic7 from '../assets/art/IMG_6952.jpeg'
+// import pic8 from '../assets/art/IMG_6954.jpeg'
+// import pic9 from '../assets/art/IMG_6955.jpeg'
+//
+// // acrylic
+// import pic10 from '../assets/art/IMG_6971.jpeg' // van gogh
+// import pic11 from '../assets/art/IMG_7202.jpeg'
+// import pic12 from '../assets/art/IMG_7203.jpeg'
+// import pic13 from '../assets/art/IMG_7204.jpeg'
+// import pic14 from '../assets/art/IMG_7205.jpeg'
 
 
 class Art extends Component {
   state = {
     default: true,
-    art: [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13, pic14],
+    // art: [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13, pic14],
   }
 
   toggleView = (e) => {

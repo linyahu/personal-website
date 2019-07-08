@@ -1,6 +1,10 @@
 #canvas {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(255,255,255,1);
   margin: 3%;
+  border-color: rgba(0,0,0,1);
+  border: solid;
+  border-width: 2px;
+  width: 90%;
 }
 
 .App {
@@ -33,14 +37,16 @@
                 NAV BAR
 **************************************/
 #logo {
-  position: sticky;
-  /* left: 50%; */
+  position: absolute;
+  left: 5%;
   /* padding: 1%; */
   /* z-index: 3; */
 }
 
 .navbar {
   padding: 1%;
+  /* position: absolute; */
+  right: 5%;
   /* background-color: rgba(200,200,200,0.5); */
   text-align: right;
 }
@@ -80,57 +86,80 @@
 
   /* width: 200px; */
 }
+.secondary-nav {
+  text-align: right;
+  margin-right: 7%;
+  font-size: 12px;
+}
+.secondary-navlink {
+  padding: 0.7%;
+  /* margin: 1%; */
+  text-decoration: none;
+}
 
+.secondary-navlink:active {
+  text-decoration: overline;
+
+}
 /**************************************
                 BOX MODEL
 **************************************/
 
 .outer-container {
-  margin-top: 5%;
-  padding: 2% 3% 5% 3%;
-  background-color: rgba(240,240,240,0.9);
+  margin-top: 2%;
+  padding: 2% 5% 5% 5%;
+  /* background-color: rgba(240,240,240,0.9); */
+  height: 500px;
+  overflow-y: auto;
 }
 
-
-.sm-card {
-  width: 25%;
-  height: 250px;
-  padding: 1.5%;
-  margin: 1%;
-  display: inline-block;
-  background-color: rgba(240,240,240,0.9);
-}
-
-
-
-.resume {
-  border-color: black;
-  border-style: solid;
+.second-container {
+  /* border-color: black;
+  border-style: solid; */
   border-width: 2px;
-  margin: 2%;
-  padding: 1%;
+  /* margin: 2%; */
+  padding: 0% 2% 1% 2%;
 }
 
-.resume p {
-  text-align: left;
-}
-
-.resume ul {
+.second-container ul {
   text-align: left;
 }
 
 .resume-block {
-  margin: 1%;
+  margin: 1% 1% 3% 1%;
   padding: 1%;
+  /* background-color: rgba(100,0,0,0.1); */
+  min-height: 250px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.experience-block {
+  padding: 0.5% 15% 0.5% 15%;
+  /* margin: 0.5%; */
+}
+
+.sm-card {
+  width: 28%;
+  min-height: 500px;
+  vertical-align: top;
+  padding: 1.5%;
+  margin: 1%;
+  display: inline-block;
+  /* background-color: rgba(240,240,240,0.9); */
+}
+
+.sm-card a {
+  color: #6C9FC1;
 }
 
 
-/**************************************
-              Artwork
-**************************************/
 .thumbnail {
-  height: 300px;
+  width: 95%;
   margin: 1%;
-  padding: 1%;
-  background-color: rgba(240,240,240,0.9);
+  padding: 2%;
+  background-color: white;
+  border-color: #FCCCC4;
+  border-style: solid;
+  border-width: medium;
 }

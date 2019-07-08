@@ -16,15 +16,13 @@ class App extends Component {
     return (
       <div>
 
-        <img id="logo" src={logo} width="50" height="50" />
+
 
 
         <div className="navbar">
           <NavLink className="navlink" to="/">HOME</NavLink>
           <NavLink className="navlink" to="/experience">EXPERIENCE</NavLink>
           <NavLink className="navlink" to="/projects">TECHNICAL PROJECTS</NavLink>
-          <NavLink className="navlink" to="/art">ART GALLERY</NavLink>
-
           <NavLink className="navlink" to="/contact">CONTACT</NavLink>
         </div>
       </div>
@@ -51,3 +49,5 @@ class App extends Component {
 }
 
 export default App;
+
+// <img id="logo" src={logo} width="50" height="50" />
