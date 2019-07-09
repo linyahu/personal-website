@@ -7,26 +7,36 @@ import cherscloset from '../assets/cherscloset.png'
 class Experience extends Component {
 
   render() {
-    // each technical project will have a card that flips when clicked/hover on image
     return (
       <Fragment>
+
+
+
       <div className="secondary-nav">
-        <a className="secondary-navlink" href="#technical-projects">Technical Projects </a>
-        <a className="secondary-navlink" href="#professional-experience">Professional Experience </a>
-        <a className="secondary-navlink" href="#education">Education</a>
-        <a className="secondary-navlink" href="#skills">Skills</a>
+        <div className="navline">
+        </div>
+        <br />
+        <a className="secondary-navlink" href="#technical-projects">TECHNICAL PROJECTS </a>
+        <a className="secondary-navlink" href="#professional-experience">PROFESSIONAL EXPERIENCE </a>
+        <a className="secondary-navlink" href="#education">EDUCATION</a>
+        <a className="secondary-navlink" href="#skills">SKILLS & INTERESTS</a>
+
       </div>
 
       <div className="outer-container">
         <div className="second-container">
 
           <div className="resume-block" id="technical-projects">
-            <h4>TECHNICAL PROJECTS</h4>
+            <h3>TECHNICAL PROJECTS</h3>
 
               <div className="sm-card">
                 <p>STOCK OVERFLOW </p>
                 <img src={stockoverflow} className="thumbnail"/>
-                <p><a href=''>Github</a> | <a href="">Live</a> | <a href=''>Demo</a></p>
+                <p>
+                  <a href='https://github.com/lh62594/final-project-frontend' target="_blank">Github</a> |
+                  <a href='http://stockoverflow-app.herokuapp.com/home' target="_blank">Live</a> |
+                  <a href='https://www.youtube.com/watch?v=IaRqunF6-Y0&t=100s' target="_blank">Demo</a>
+                </p>
                 <ul>
                   <li>Stock Overflow is a portfolio management app inspired by the Bloomberg Terminal; users can create custom watchlists on their dashboard and practice trading in their portfolio.</li>
                   <li>Full stack app built with a React.js/Redux frontend with a Rails backend and external API for live stock data</li>
@@ -38,7 +48,10 @@ class Experience extends Component {
                 <p>RAT CITY GAME</p>
                 <img src={ratcity} className="thumbnail"/>
 
-                <p><a href=''>Github</a> | <a href="">Live</a> | <a href=''>Demo</a></p>
+                <p>
+                  <a href='https://github.com/lh62594/rat-city-game' target="_blank">Github</a> |
+                  <a href='http://ratcity.herokuapp.com/' target="_blank">Live</a> |
+                  <a href='https://www.youtube.com/watch?v=DkYIG-Hdb0Q&t=17s' target="_blank">Demo</a></p>
                 <ul>
                   <li>Rat City is an MTA-themed 2D side scroller game with 14 levels; the objective is to collect pizza points, using beer can weapons to defeat bosses while avoiding rats/pigeon obstacles in the way</li>
                   <li>Built front-end of the game using vanilla JavaScript, with the HTML5 Canvas element to facilitate frame by frame animations </li>
@@ -48,7 +61,10 @@ class Experience extends Component {
               <div className="sm-card">
                 <p>CHER'S CLOSET</p>
                 <img src={cherscloset} className="thumbnail"/>
-                <p><a href=''> Github</a> | <a href=''>Demo</a></p>
+                <p>
+                  <a href='https://github.com/lh62594/chers-closet-frontend' target="_blank"> Github</a> |
+                  <a href='https://www.youtube.com/watch?v=Pihid6NnCWE&t=29s' target="_blank">Demo</a>
+                </p>
                 <ul>
                   <li>Cher’s Closet, inspired by the movie Clueless, is a drag and drop app for users to create customized outfits from clothes in their closet.</li>
                   <li>Full-stack application built with React.js frontend with a Rails backend; used ActiveStorage for storing images</li>
@@ -58,7 +74,7 @@ class Experience extends Component {
 
 
           <div className="resume-block" id="professional-experience">
-            <h4>PROFESSIONAL EXPERIENCE</h4>
+            <h3>PROFESSIONAL EXPERIENCE</h3>
             <br />
             <h5>Société Générale | Strategic Transactions Group | Jan 2018 - Oct 2018 </h5>
             <div className="experience-block">
@@ -89,7 +105,7 @@ class Experience extends Component {
 
 
           <div className="resume-block" id="education">
-            <h4>EDUCATION</h4>
+            <h3>EDUCATION</h3>
             <div className="experience-block">
               <div className="education-heading">
                 <h5> Flatiron School
@@ -119,7 +135,8 @@ class Experience extends Component {
 
               <div className="education-body">
               <ul>
-                <li>Leonard N. Stern School of Business B.S., Finance & Management, GPA: 3.7 | Awards: Irving H. Isaac Scholarship; Joan & Dan Holmes Scholarship; Suh Family Scholarship </li>
+                <li>Leonard N. Stern School of Business B.S., Finance & Management, GPA: 3.7 </li>
+                <li>Awards: Irving H. Isaac Scholarship; Joan & Dan Holmes Scholarship; Suh Family Scholarship </li>
                 <li>Teacher’s Assistant by invitation, International Financial Management, Fall 2015 </li>
                 <li>Activities: </li>
                   <ul>
@@ -135,7 +152,7 @@ class Experience extends Component {
 
           <div className="resume-block" id="skills">
             <div className="experience-block">
-              <h4>SKILLS & INTERESTS</h4>
+              <h3>SKILLS & INTERESTS</h3>
               <ul>
                 <li>Spoken Languages: Fluent Mandarin Chinese; Conversational French </li>
                 <li>Technical Skills: VBA, HTML/CSS, Ruby/Ruby on Rails, SQL, JavaScript, React, Redux, Python </li>
@@ -148,7 +165,7 @@ class Experience extends Component {
 
         </div>
 
-        <a href=""> Click here </a> to download in a PDF format
+        <a href="">Click here</a> to download in a PDF format
       </div>
       </Fragment>
     )

@@ -1,13 +1,30 @@
 import React, { Component } from 'react'
 
 class Contact extends Component {
+  state = {
+    name: "",
+    email: "",
+    subject: "",
+    body: ""
+  }
 
   render() {
     return (
-      <div className="experience">
-        <h3> box for email </h3>
-        <h4> also link email --> have it open up outlook? or open in gmail? </h4>
-        <h4> social media icons [IG] [LinkedIn] [Medium] [GitHub] </h4>
+      <div className="outer-container">
+        <form className="contact-form">
+          <span>Name</span>
+          <input type="text" />
+          <br />
+          <span>Email</span>
+          <input type="text" />
+          <br />
+          <span>Subject</span>
+          <input type="text" />
+          <br />
+          <input className="body" type="text" />
+          <br />
+          <input type="submit" value="Send" />
+        </form>
       </div>
     )
   }

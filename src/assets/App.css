@@ -1,15 +1,15 @@
 #canvas {
-  background-color: rgba(255,255,255,1);
-  margin: 3%;
-  border-color: rgba(0,0,0,1);
-  border: solid;
+  /* background-color: rgba(0,0,0,0.2); */
+  /* margin: 3%; */
+  /* border-color: rgba(0,0,0,1); */
+  /* border: solid; */
   border-width: 2px;
-  width: 90%;
+  /* width: 100%; */
+  height: 95vh;
 }
 
 .App {
   text-align: center;
-
 }
 
 .App-logo {
@@ -45,11 +45,12 @@
 }
 
 .navbar {
-  padding: 1%;
+  padding: 0.5%;
   /* position: absolute; */
   right: 5%;
-  /* background-color: rgba(200,200,200,0.5); */
-  text-align: right;
+  /* background-color: #C1D1DC; */
+  text-align: left;
+  /* height: 5vh; */
 }
 
 .sub-navbar {
@@ -67,11 +68,13 @@
   padding: 1%;
   text-decoration: none;
   font-size: 14px;
-  color: #6B808C;
+  color: #C1D1DC;
 }
 
 .navlink:hover {
-  color: #7AB6B3;
+  color: #F0B3B3;
+  text-shadow: 0 0 10px #F0B3B3;
+  /* font-weight: 500; */
 }
 
 .navlink:focus {
@@ -84,42 +87,56 @@
   font-size: 12px;
   text-decoration: none;
   color: #2D363A;
-
   /* width: 200px; */
 }
 .secondary-nav {
-  text-align: right;
-  margin-right: 7%;
-  font-size: 12px;
+  margin-right: 3%;
+  position: absolute;
+  text-align: center;
+  height: 100vh;
+  font-size: 11px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+
+  /* background-color: rgba(255,255,0,0.1); */
 }
 .secondary-navlink {
-  padding: 0.7%;
-  /* margin: 1%; */
+  padding: 2%;
+  color: #9FB7C9;
+  /* margin: 1.5%; */
   text-decoration: none;
 }
 
-.secondary-navlink:active {
-  text-decoration: overline;
-
+.secondary-navlink:hover {
+  color: #3D78A0;
+  font-weight: 500;
+  /* text-decoration: overline;
+  text-decoration-color: #6C9FC1; */
 }
+
+.navline {
+  height: 70vh;
+  text-align: center;
+  margin: auto;
+  width: 2px;
+  background-color: #9FB7C9;
+}
+
 /**************************************
                 BOX MODEL
 **************************************/
 
 .outer-container {
-  margin-top: 2%;
-  padding: 2% 5% 5% 5%;
+  margin-top: 0.5%;
+  padding: 1% 5% 1% 5%;
   /* background-color: rgba(240,240,240,0.9); */
-  height: 500px;
+  height: 85vh;
   overflow-y: auto;
   scroll-behavior: smooth;
 }
 
 .second-container {
-  /* border-color: black;
-  border-style: solid; */
   border-width: 2px;
-  /* margin: 2%; */
   padding: 0% 2% 1% 2%;
 }
 
@@ -137,33 +154,36 @@
 }
 
 .experience-block {
-  padding: 0.5% 15% 0.5% 15%;
-  /* margin: 0.5%; */
+  padding: 0.5% 10% 0.5% 10%;
+  margin: auto;
+  width: 65%;
+  /* background-color: rgba(0,100,100,0.1); */
 }
 
 .sm-card {
-  width: 28%;
+  width: 60%;
   min-height: 500px;
-  vertical-align: top;
+  /* vertical-align: top; */
   padding: 1.5%;
-  margin: 1%;
-  display: inline-block;
+  margin: auto;
+  /* display: inline-block; */
   /* background-color: rgba(240,240,240,0.9); */
 }
 
 .sm-card a {
   color: #6C9FC1;
+  padding: 1%;
 }
 
 
 .thumbnail {
   width: 95%;
-  margin: 1%;
-  padding: 2%;
-  background-color: white;
-  border-color: #FCCCC4;
-  border-style: solid;
-  border-width: medium;
+  /* margin: 1%; */
+  /* padding: 2%; */
+  /* background-color: white; */
+  /* border-color: #DAE6EA; */
+  /* border-style: solid; */
+  /* border-width: medium; */
 }
 
 .education-heading {
@@ -182,4 +202,24 @@
   width: 77%;
   display: inline-block;
   vertical-align: top;
+}
+
+.contact-form {
+  background-color: rgba(0,0,200,0.1);
+  width: 50%;
+  margin: auto;
+  text-align: left;
+}
+
+.contact-form span {
+  text-align: left;
+  padding: 2%;
+  margin: 2%;
+  width: 200px;
+  height: 20px;
+}
+
+.contact-form input {
+  width: 200px;
+  margin: 2%;
 }

@@ -15,14 +15,9 @@ class App extends Component {
   renderNavBar() {
     return (
       <div>
-
-
-
-
         <div className="navbar">
           <NavLink className="navlink" to="/">HOME</NavLink>
           <NavLink className="navlink" to="/experience">EXPERIENCE</NavLink>
-          <NavLink className="navlink" to="/projects">TECHNICAL PROJECTS</NavLink>
           <NavLink className="navlink" to="/contact">CONTACT</NavLink>
         </div>
       </div>

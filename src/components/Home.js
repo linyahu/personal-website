@@ -1,25 +1,61 @@
 import React, { Component } from 'react'
 
+
+
 class Home extends Component {
   // render a cool animation with canvas
-
-  componentDidMount(){
-    this.drawSomething()
+  state = {
+    //    gunmetal, melon, pale pink, columbia blue, wild blue yonder
+    // colors: ["#2D3A42", "#F0B3B3", "#F6D5D5", "#C1D1DC", "#9FB7C9"],
+    colors: ["#C5C9CB", "#F5CECE", "#FAE8E8", "#D7E1E8", "#C1D1DC", "#2D3A42", "#F0B3B3", "#F6D5D5", "#C1D1DC", "#9FB7C9"],
+    // x: Math.floor(Math.random() * Math.floor(1600)),
+    // y: Math.floor(Math.random() * Math.floor(900)),
+    // z: Math.floor(Math.random() * Math.floor(5)),
   }
 
-  drawSomething() {
-    let canvas = document.querySelector("#canvas")
+  componentDidMount(){
+    // setInterval(this.renderTest, 100)
+  }
+
+  renderTest = () => {
+    // console.log("is this doing anything?");
+    const canvas = document.querySelector("#canvas")
     let c = canvas.getContext("2d")
 
-    c.fillStyle = ("rgb(255,0,0)")
-    c.fillRect(350,350,50,50)
+    this.renderAnimation(c)
+  }
+
+
+
+  renderAnimation = (c) => {
+    // c.clearRect(Math.floor(Math.random() * Math.floor(1600)),Math.floor(Math.random() * Math.floor(900)),200,200)
+    c.clearRect(0,0,1600,900)
+
+
+
+
+    for (var i = 0; i < 200; i++) {
+      this.draw(c)
+    }
+  }
+
+  draw = (c) => {
+    let x = Math.floor(Math.random() * Math.floor(1600))
+    let y = Math.floor(Math.random() * Math.floor(900))
+    let z = Math.floor(Math.random() * Math.floor(10))
+
+    c.beginPath();
+    c.arc(x, y, 5, 0, 2 * Math.PI, false);
+    c.fillStyle = this.state.colors[z];
+    c.fill();
   }
 
   render() {
+
+
     return (
       <div>
-        <canvas id="canvas" width="1200" height="600"></canvas>
-
+        <canvas id="canvas" width="1600" height="900"></canvas>
       </div>
     )
   }
